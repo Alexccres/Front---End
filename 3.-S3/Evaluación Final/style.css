@@ -1,0 +1,20 @@
+.nav{
+        background-image: url('./img/fondo.jpg');
+        background-position: 0cm;
+      }
+
+/* etiquetas h1 */
+h1{
+   font-size: 2.5rem;
+   color: 373737;
+}
+/* etiquetas h4 */
+h4{
+    text-decoration: overline;
+}
+
+/*formulario*/
+.formulario{
+    width: 60%;
+    border-radius: 2%;
+}

@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> NimRodel Pub Restaurant</title>
+    <!--bootstrap style-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg navbar-bg-dark" style="background-image: url('./img/fondo.jpg');">
+    <div class="container-fluid">
+      <a class="navbar-brand"  href="#"><img src="./img/n (1).png" alt="logo" class="w-25" ></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"> 
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+    <!-- título -->
+    <section class="mt-5">
+        <div class="container text-center">
+        <h1 class="pb-4 text-secondary fw-bold">NimRodel Pub Restaurant</h1>
+        <h4 class="pt-3 fw-bold">Destacados de la semana</h4>
+        </div>
+        <div>
+    </section>
+
+    <!-- carta -->
+    <section class="container mt-4">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- primera carta -->
+            <div class="col my-2">
+              <div class="card h-100">
+                <img src="./img/bebidas (1).jpg" class= "card-img-top" alt="bebidas" style="height: 20vw; object-fit: cover;">
+                <div class="card-body">
+                  <h3 class="card-title">GASEOSAS</h3>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+            <!-- segunda carta -->
+            <div class="coL my-2">
+              <div class="card h-100">
+                <img src="./img/tablas (1).jpg" alt="tablas" style="height: 20vw; object-fit: cover;">
+                <div class="card-body">
+                  <h5 class="card-title"> TABLAS </h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+            <!-- tercera carta -->
+            <div class="col my-2">
+              <div class="card h-100">
+                <img src="./img/shop (1).jpeg" alt="shop" style="height: 20vw; object-fit: cover;">
+                <div class="card-body">
+                  <h5 class="card-title">CERVEZAS</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                </div>
+              </div>
+            </div>
+        </div>   
+    </section>
+ <!-- formularios -->
+ <section class="container mt-5 mb-5 d-none d-md-block">
+  <div class="row">
+    <!-- contacto -->
+    <div class="formulario col-sm-7 col-md-7 mb-5 m-auto p-4 bg-dark text-light">
+        <form>
+            <h5 class="text-center">Comentarios</h5>
+            <div class="mb-3"> <!--nombre-->
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre" aria-describedby="ingresoNombre" placeholder="Fulanito Perez">
+            </div>
+            <div class="mb-3"><!--Correo-->
+              <label for="correo" class="form-label">Correo</label>
+              <input type="email" class="form-control" id="correo" placeholder="correo@gmail.com">
+            </div>
+            <div class="mb-3"><!--telefono-->
+              <label for="telefono" class="form-label">Teléfono</label>
+              <input type="tel" class="form-control" id="telefono" placeholder="956000890">
+            </div>
+            <div class="mb-3"><!--comentarios-->
+              <label for="floatingTextarea">Comentarios</label>
+              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+            </div>
+            <select class="form-select mb-3" aria-label="select"><!--selector-->
+              <option selected>Motivos</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+            <div class="mb-3 form-check"> <!--checkbox-->
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <!-- boton -->
+            <button type="submit" class="btn btn-primary mb-3">Submit</button>
+        </form>
+    </div>
+    <!-- reserva -->
+    <div class="formulario col-sm-7 col-md-7 mb-5 m-auto p-4 bg-dark text-light">
+        <form>
+          <h5 class="text-center">Reserva</h5>
+          <div class="mb-3"> <!--nombre-->
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" aria-describedby="ingresoNombre" placeholder="Fulanito Perez">
+          </div>
+          <div class="mb-3"><!--Correo-->
+            <label for="correo" class="form-label">Correo</label>
+            <input type="email" class="form-control" id="correo" placeholder="correo@gmail.com">
+          </div>
+          <div class="mb-3"><!--telefono-->
+            <label for="telefono" class="form-label">Teléfono</label>
+            <input type="tel" class="form-control" id="telefono" placeholder="956000890">
+          </div>
+          <div class="mb-3"><!--fecha-->
+            <label for="fecha" class="form-label">Fecha</label>
+            <input type="date" class="form-control" id="fecha">
+          </div>
+          <div class="mb-3"><!--hora-->
+            <label for="hora" class="form-label">Hora</label>
+            <input type="time" class="form-control" id="hora">
+          </div>
+          <div class="mb-3"><!--cantidad de asistentes-->
+            <label for="asistentes" class="form-label">Cantidad de asistentes</label>
+            <input type="number" class="form-control" id="asistentes" min="1">
+          </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+  </div>
+</section>
+
+<!-- footer o pie de pagina -->
+<footer class="p-3 bg-dark text-light text-center fixed-bottom" style="background-image: url('./img/fondo.jpg');">
+   <p>Todos los derechos reservados</p>
+</footer>
+<!-- bootstrap javascript, popper y bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+</body>
+</html>
